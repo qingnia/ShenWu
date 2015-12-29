@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HeroAttr xmlns="http://tempuri.org/user_init.xsd" orderDate="1999-10-20">
+      <number>0</number>
+      <name>sword</name>
+      <level>1</level>
+      <HP>360</HP>
+      <MP>100</MP>
+      <ATT>120</ATT>
+      <DEF>50</DEF>
+      <Exp>0</Exp>
+      <NEXT>200</NEXT>
+</HeroAttr>

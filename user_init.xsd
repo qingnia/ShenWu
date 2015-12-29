@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="user_init"
+    targetNamespace="http://tempuri.org/user_init.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/user_init.xsd"
+    xmlns:mstns="http://tempuri.org/user_init.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="HeroAttr" type="HeroAttrType"/>
+  <xs:element name="UserData" type="UserDataType"/>
+  
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      Purchase order schema for Example.com.
+      Copyright 2000 Example.com. All rights reserved.
+    </xs:documentation>
+  </xs:annotation>
+
+  <xs:complexType name="UserDataType">
+    <xs:annotation>
+      <xs:documentation>
+        Every has a xml data.
+      </xs:documentation>
+    </xs:annotation>
+
+    <xs:sequence>
+      <xs:element name="username" type="xs:string"/>
+      <xs:element name="password" type="xs:string"/>
+      <xs:element name="role"     type="HeroAttrType"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  
+  <xs:complexType name="HeroAttrType">
+    <xs:annotation>
+      <xs:documentation>
+        Just define the attribute about hero.
+      </xs:documentation>
+      <xs:appinfo>
+        Application info.
+      </xs:appinfo>
+    </xs:annotation>
+
+
+    <xs:sequence>
+      <xs:element name="number"    type="xs:decimal"/>
+      <xs:element name="name"   type="xs:string"/>
+      <xs:element name="level" type="xs:decimal"/>
+      <xs:element name="HP" type="xs:decimal"/>
+      <xs:element name="MP"   type="xs:decimal"/>
+      <xs:element name="ATT"  type="xs:decimal"/>
+      <xs:element name="DEF"    type="xs:decimal"/>
+      <xs:element name="Exp"    type="xs:decimal"/>
+      <xs:element name="NEXT"    type="xs:decimal"/>
+    </xs:sequence>
+    <xs:attribute name="orderDate" type="xs:date"/>
+  </xs:complexType>
+
+</xs:schema>
